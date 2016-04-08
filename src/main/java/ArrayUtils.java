@@ -3,7 +3,7 @@ import java.lang.reflect.Array;
 /**
  * @auther HuJiaqi
  * @createTime 2016年04月07日 15时51分
- * @discription
+ * @discription 数组工具类
  */
 public class ArrayUtils {
 

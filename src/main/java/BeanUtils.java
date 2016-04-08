@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * @auther HuJiaqi
  * @createTime 2016年04月07日 14时04分
- * @discription
+ * @discription bean工具类
  */
 public class BeanUtils {
 
