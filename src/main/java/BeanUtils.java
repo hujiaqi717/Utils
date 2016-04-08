@@ -23,11 +23,10 @@ public class BeanUtils {
      * @discription byte数组转object，建议处理异常
      */
     public static Object bytesToObject(byte[] b) {
-        Object obj = null;
         try {
             ByteArrayInputStream bis = new ByteArrayInputStream(b);
             ObjectInputStream ois = new ObjectInputStream(bis);
-            obj = ois.readObject();
+            Object obj = ois.readObject();
             ois.close();
             bis.close();
             return obj;
