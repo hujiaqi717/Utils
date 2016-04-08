@@ -43,9 +43,9 @@ public class EncryptUtils {
     }
 
     /**
-     * @author HuJiaqi
-     * @createTime 2015年11月13日 下午5:19:26
-     * @description 加密姓名，格式有三种：1、郑和：郑*，2、司马迁：司**，3、东方不败：东方**，4、你跺你也麻：你跺***
+     * @auther HuJiaqi
+     * @createTime 2016年04月08日 17时19分
+     * @discription 加密姓名，格式有三种：1、郑和：郑*，2、司马迁：司**，3、东方不败：东方**，4、你跺你也麻：你跺***
      */
     public static String getEncryptName(String name) {
         if (name.length() == 2) {
@@ -65,9 +65,9 @@ public class EncryptUtils {
     }
 
     /**
-     * @author HuJiaqi
-     * @createTime 2015年11月13日 下午5:19:03
-     * @description 加密手机号：格式150****0717
+     * @auther HuJiaqi
+     * @createTime 2016年04月08日 17时19分
+     * @discription 加密手机号：格式150****0717
      */
     public static String getEncryptPhone(String phone) {
         return phone.substring(0, 3) + "****" + phone.substring(7);
