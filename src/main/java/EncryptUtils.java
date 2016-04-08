@@ -42,4 +42,35 @@ public class EncryptUtils {
         }
     }
 
+    /**
+     * @author HuJiaqi
+     * @createTime 2015年11月13日 下午5:19:26
+     * @description 加密姓名，格式有三种：1、郑和：郑*，2、司马迁：司**，3、东方不败：东方**，4、你跺你也麻：你跺***
+     */
+    public static String getEncryptName(String name) {
+        if (name.length() == 2) {
+            name = name.substring(0, 1) + "*";
+        } else if (name.length() == 3) {
+            name = name.substring(0, 1) + "**";
+        } else if (name.length() == 4) {
+            name = name.substring(0, 2) + "**";
+        } else {
+            int len = name.length();
+            name = name.substring(0, 2);
+            for (int i = 0; i < len - 2; i++) {
+                name += "*";
+            }
+        }
+        return name;
+    }
+
+    /**
+     * @author HuJiaqi
+     * @createTime 2015年11月13日 下午5:19:03
+     * @description 加密手机号：格式150****0717
+     */
+    public static String getEncryptPhone(String phone) {
+        return phone.substring(0, 3) + "****" + phone.substring(7);
+    }
+
 }
