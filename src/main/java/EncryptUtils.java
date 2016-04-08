@@ -36,7 +36,7 @@ public class EncryptUtils {
                 }
                 sb.append(Integer.toHexString(j));
             }
-            return sb.toString();
+            return sb.toString().toUpperCase();
         } catch (Exception e) {
             throw new RuntimeException("MD5加密失败" + e);
         }
