@@ -5,12 +5,13 @@ import java.lang.reflect.Array;
  * @createTime 2016年04月07日 15时51分
  * @discription 数组工具类
  */
+@SuppressWarnings("unused")
 public class ArrayUtils {
 
     /**
      * @auther HuJiaqi
      * @createTime 2016年04月08日 13时10分
-     * @discription 数组合并，仅支持相同类型数组合并
+     * @discription 数组合并，仅支持相同类型的数组合并
      */
     public static <T> T[] merge(T[] array1, T[] array2) {
         if ((array1 == null) && (array2 == null))
@@ -23,6 +24,7 @@ public class ArrayUtils {
         Object[] array = (Object[]) Array.newInstance(c, array1.length + array2.length);
         System.arraycopy(array1, 0, array, 0, array1.length);
         System.arraycopy(array2, 0, array, array1.length, array2.length);
+        @SuppressWarnings("unchecked")
         T[] result = (T[]) array;
         return result;
     }
