@@ -114,7 +114,6 @@ public class BeanUtils {
     @Retention(RetentionPolicy.RUNTIME)
     @Documented
     public @interface CopyName {
-        @SuppressWarnings("unused")
         String value() default "";
     }
 
