@@ -3,7 +3,7 @@ import java.security.MessageDigest;
 /**
  * @auther HuJiaqi
  * @createTime 2016年04月08日 16时52分
- * @discription
+ * @discription 加密工具类
  */
 @SuppressWarnings("unused")
 public class EncryptUtils {
