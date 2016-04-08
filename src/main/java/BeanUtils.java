@@ -149,7 +149,7 @@ public class BeanUtils {
                     Object obj = fromField.get(from);
                     Field toField = null;
                     c = to.getClass();
-                    while (toField == null && c != null) {
+                    while (c != null) {
                         try {
                             toField = c.getDeclaredField(fieldName);
                             break;
