@@ -5,7 +5,7 @@ import java.security.MessageDigest;
  * @createTime 2016年04月08日 16时52分
  * @discription 加密工具类
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unchecked", "unused"})
 public class EncryptUtils {
 
     /**

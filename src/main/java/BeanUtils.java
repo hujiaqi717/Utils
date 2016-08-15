@@ -15,7 +15,7 @@ import java.util.Map;
  * @createTime 2016年04月07日 14时04分
  * @discription bean工具类
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unchecked", "unused"})
 public class BeanUtils {
 
     /**

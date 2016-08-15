@@ -16,6 +16,7 @@ import java.security.spec.X509EncodedKeySpec;
  * @createTime 2016年04月08日 17时26分
  * @discription RSA公钥加密私钥解密，用于签名
  */
+@SuppressWarnings({"unchecked", "unused"})
 public class RSAUtils {
 
     /**

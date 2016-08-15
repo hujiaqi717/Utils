@@ -7,7 +7,7 @@ import java.util.Date;
  * @createTime 2016年04月08日 13时08分
  * @discription 时间工具类
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unchecked", "unused"})
 public class DateUtils {
 
     // 标准程序时间格式
